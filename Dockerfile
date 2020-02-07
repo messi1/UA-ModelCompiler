@@ -8,7 +8,7 @@ RUN msbuild "ModelCompiler Solution.sln" /t:Build /p:Configuration=Release /p:Ta
 # Only keep the compiled files
 RUN mv /tmp/app-build/Bin/Release /app
 # Copy the necessary design files used by the model compiler
-RUN mv /tmp/app-build/ModelCompiler/Design /app/Design
+RUN mv /tmp/app-build/ModelCompiler/Design* /app
 RUN mv /tmp/app-build/PublishModel.* /app
 
 WORKDIR /app
