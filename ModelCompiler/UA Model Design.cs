@@ -1484,6 +1484,10 @@ namespace Opc.Ua.ModelCompiler {
 
         /// <remarks/>
         HistoryReadWrite,
+
+        Read_HistoryRead,
+
+        ReadWrite_HistoryRead
   }
     
     /// <remarks/>

@@ -4049,6 +4049,8 @@ namespace Opc.Ua.ModelCompiler
                 case AccessLevel.HistoryRead: return AccessLevels.HistoryRead;
                 case AccessLevel.HistoryWrite: return AccessLevels.HistoryWrite;
                 case AccessLevel.HistoryReadWrite: return AccessLevels.HistoryReadOrWrite;
+                case AccessLevel.Read_HistoryRead: return (AccessLevels.CurrentRead | AccessLevels.HistoryRead);
+                case AccessLevel.ReadWrite_HistoryRead: return (AccessLevels.CurrentReadOrWrite | AccessLevels.HistoryRead);
       }
 
             return AccessLevels.None;

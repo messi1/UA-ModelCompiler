@@ -702,6 +702,8 @@
       <xs:enumeration value="HistoryRead" />
       <xs:enumeration value="HistoryWrite" />
       <xs:enumeration value="HistoryReadWrite" />
+      <xs:enumeration value="Read_HistoryRead" />
+      <xs:enumeration value="ReadWrite_HistoryRead" />
     </xs:restriction>
   </xs:simpleType>
 
